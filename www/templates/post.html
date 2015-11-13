@@ -1,0 +1,32 @@
+<ion-view>
+	<ion-nav-title>
+  {{::post.title.rendered}}
+	</ion-nav-title>
+  <ion-content class="padding">
+  <ion-refresher on-refresh="doRefresh()"></ion-refresher>
+  	<div class="card post">
+  		<div class="item post-title item-avatar">
+        <img ng-src="{{post.featured_image_thumbnail_url}}" ng-if="post.featured_image" />
+  		<h2 ng-bind-html="post.title.rendered"></h2>
+      <p ng-bind-html="post._embeded.author.name"></p>
+  		
+      </div>
+      
+  		<div class="item item-body" ng-bind-html="content | html_filters"></div>
+      
+
+      <div class="item tabs tabs-secondary tabs-icon-left">
+        <a class="tab-item" href="#">
+          <i class="icon ion-forward"></i>
+          Teilen
+        </a>
+        <a class="tab-item" href="#" ng-click="bookmarkItem(post.id)">
+          <i ng-class="{'icon ion-ios-star': bookmarked, 'icon ion-ios-star-outline': !bookmarked}"></i>
+          Lesezeichen setzen
+        </a>
+      </div>
+
+    </div>
+
+   </ion-content>
+</ion-view>

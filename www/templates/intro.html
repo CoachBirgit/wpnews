@@ -1,0 +1,25 @@
+<ion-view view-title="Intro">
+  <ion-slide-box on-slide-changed="slideChanged(index)">
+    <ion-slide>
+      <div class="slide-content">
+        <h3>Du findest hier eine Sammlung von WordPress News aus der Community</h3>
+        
+        <button class="button button-block button-balanced" ng-click="next()">weiter</button>
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="slide-content">
+        <h3>Diese App wurde mit dem Ionic Framework + WordPress REST API erstellt</h3>
+        <button class="button button-block button-balanced" ng-click="next()">weiter</button>
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="slide-content">
+        <h3>Was willst du machen?</h3>
+        <button class="button button-block button-balanced" ng-click="startApp()">
+          News lesen!
+        </button>
+      </div>
+    </ion-slide>
+  </ion-slide-box>
+</ion-view>
