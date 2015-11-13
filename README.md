@@ -13,7 +13,7 @@ Features:
 
 ## Demo
 
-https://github.com/scottopolis/wpNews/blob/master/demo-video.gif
+https://github.com/CoachBirgit/wpnews/blob/master/demo-video.gif
 
 ## How to setup
 
