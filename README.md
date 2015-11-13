@@ -23,4 +23,4 @@ Blog post here: http://scottbolinger.com/ionic-wordpress-app/
 2. Go to www/js/controllers.js and change $rootScope.url to your website
 3. Load index.html in Safari, or compile app with Phonegap
 
-**Props to [https://github.com/modemlooper]**
+**Props to [https://github.com/modemlooper]**# wpnews 
